@@ -30,9 +30,8 @@ Lambert's Cosine Law is defined to give a distribution of light as such:
 As $\theta$ increases, $\cos{\theta}$ approaches 0. The light's intensity, represented by $r_i$ would be strongest if it is facing the surface directly (i.e. $\theta=0$). What our code does (`sf::Vector3f scatter_direction = rec.normal + randomUnitVector();`), is an approximation of that. Its quicker and still gives a good-enough approximation.
 
 ## Mirrored Reflections *(Metal)*
-<div align="center">  
-<img src="RayReflection.svg" width="500"/> 
-</div>
+<div align="center"> <img src="RayReflection.svg" width="500"/> </div>
+
 Incident ray $\mathbf{I}$ strikes the surface to be reflected perfectly. The reflecting ray we can get with the projection of $\mathbf{I}$ on to normal $\mathbf{N}$, is of length $\mathbf{I} \cdot \mathbf{N}$, and we scale it by $\mathbf{N}$ to give it its direction. So far we have $(\mathbf{I} \cdot \mathbf{N})\mathbf{N}$. We thus now have the perpendicular component of $\mathbf{I}$ aligned at $\mathbf{N}$. The parallel , which, through substitution, is given by:
 $$
 \mathbf{I} = \mathbf{I}_\perp +\mathbf{I}_\parallel
@@ -92,7 +91,11 @@ $$
 \mathbf{a} \cdot \mathbf{b} =\cos \theta
 $$
 We can define $\mathbf{R_\perp}$ to be:
-$$\mathbf{R}_\perp = \frac{\eta_1}{\eta_2} (\mathbf{I}+(-\mathbf{I}\cdot\mathbf{N}^\prime)\mathbf{N}^\prime$$
+$$
+
+\mathbf{R}_\perp = \frac{\eta_1}{\eta_2}(\mathbf{I}+(-\mathbf{I}\cdot\mathbf{N}^\prime)\mathbf{N}^\prime
+
+$$
 We can write this into code as:
 ```cpp
 /// @param relativeRefractiveIndex The relative refractive index, equal to Eta initial divided by Eta final  

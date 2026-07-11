@@ -158,7 +158,8 @@ b=-2h
 $$
 This simplifies the quadratic formula neatly:
 $$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
 $$
 x=\frac{-(-2h)\pm\sqrt{(-2h)^{2}-4ac}}{2a}
 $$
