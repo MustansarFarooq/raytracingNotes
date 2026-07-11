@@ -1,5 +1,5 @@
 We will introduce a new primitive, the `quad`, which will technically be a parallelogram. To define this quad, we will have $\mathbf{Q}$, the starting corner, and vectors $\mathbf{u}$ and $\mathbf{v}$, each representing a side.
-![](media/Quad.png)
+![[media/Quad.png]]
 ## Ray-Plane Intersection
 Our approach to checking for an intersection with a quadrilateral is to first see if our ray intersects the plane on which the quadrilateral lies upon, and then to check if our ray is in the section of the plane in which the interior of the quadrilateral lies. Recall the formula for a plane: 
 $$

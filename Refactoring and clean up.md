@@ -10,8 +10,7 @@ void set_face_normal(const ray& r, const sf::Vector3f& outward_normal) {
 ```
 
 So currently, our normal always faces outwards of the sphere. So if the ray is intersecting through the sphere and goes through it, the ray and the normal would be in the same direction. Because of that, we are unsure of whether we are facing the front side of the sphere. Now we could get around this through this code. Taking the dot product tells us if the ray and normal face the same direction, and storing that in the boolean `front_face`. We then always default the normal to be **against** the ray.
-![](media/Normal%20Inversion.png)
-
+![[media/Normal Inversion.png]]
 Later on, we make a list for hittable objects. Any object that derives from the hittable class, gets put into that list. We have to use `shared_ptr` and pointers in general because when you have a `vector` list of type `hittable`, the inherited class gets sliced off. We cannot store properly a sphere, or later on cubes, and prisms and whatever, because the line
 ```cpp
 std::vector<shared_ptr<hittable>> objects;
@@ -130,4 +129,4 @@ private:
 
 **NOTE:** Later we switch from color to always being a `Vector3f` with values on a scale from 0.0-1.0, which later get translated on to SFML's `uint8_t` scale only in the render function.
 
-Now lets move on to actually making our spheres with [materials](Materials.md).
+Now lets move on to actually making our spheres with [[Materials]].

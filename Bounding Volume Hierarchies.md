@@ -3,7 +3,7 @@ We will have to check if our ray intersects the box, defined and bound by axes (
 $$
 \mathbf{P}(t)=\mathbf{Q}+t\mathbf{D}
 $$
-![](media/BVH1.png)
+![[media/BVH1.png]]
 With our ray, we want to see which of these axis lines we intersect. Lets only consider the lines for the x-axis. The point at which our ray's x-component (so considering only ${\mathbf{P}(t)}_x=\mathbf{Q}_x+t_x\mathbf{D}_x$) intersects the first x-axis line, $x_0$, would be 
 $$
 x_0=\mathbf{Q}_x+t_{x_0}\mathbf{D}_x
@@ -14,7 +14,7 @@ t_{x_0}=\frac{x_0-\mathbf{Q}_x}{\mathbf{D}_x}
 $$
 We can do the same to solve for $t_{x_1}$, instead plugging in $x_1$ in place of $x_0$. Once we have the intervals $[t_{x_0},t_{x_1}]$ and $[t_{y_0},t_{y_1}]$, we check if these intervals overlap, and if they do, then they fall within the bounding box. This easily extends to three dimensions, so don't worry!
 We do have some issues though. Consider if $\mathbf{D}_x$ is negative. Our interval would look reversed.
-![](media/BVH2.png)
+![[media/BVH2.png]]
 To fix our reversed interval, $[7,3]$, we can easily take the lesser of the two values, $t_{x_0}$ and $t_{x_1}$ to be $t_{x_0}$ and the greater of the two values to be $t_{x_1}$.
 $$
 t_{x_0}=\mathrm{min}\left(\frac{x_0-\mathbf{Q}_x}{\mathbf{D}_x},\frac{x_1-\mathbf{Q}_x}{\mathbf{D}_x}\right)
@@ -166,4 +166,6 @@ With BVH: 63.740s
 Without BVH: 808.22s
 
 Roughly a 12-14x increase on large scenes.
-Now we move on to [textures](Textures.md).
+- [ ] TODO: Explain BVH better.
+
+Now we move on to [[Textures]].

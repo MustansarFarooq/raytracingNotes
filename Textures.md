@@ -51,7 +51,7 @@ private:
 ## Image Textures
 We will now use $u,v$ to map our textures. These coordinates define a location on a 2D image. We have our 3D sphere, and we have to somehow map the coordinates of where the ray hit (`p`) to $u,v$.
 Texture coordinates for spheres are based on longitude and latitude. We use $(\theta,\phi)$, where $\theta$ is the angle, from -Y to +Y, and $\phi$ is the angle around the Y-axis, which would be  -X to +Z, from +Z to +X to -Z, and looping back to -X.
-![](media/theta%20and%20pi.png)
+![[media/theta and phi.png]]
 We want $u$ and $v$ to each be in the range $\left[0,1\right]$, so $\phi$ and $\theta$  have to be normalized. To compute $\phi$ and $\theta$ for a given point, we look at the parameterizations:
 $$
 y=-\cos\theta
@@ -62,7 +62,7 @@ $$
 $$
 x=-\sin(\phi)\sin(\theta)
 $$
-![](media/Sphere%20Parametrization.png)
+![[media/Sphere Parametrization.png]]
 To solve for $\phi$ and $\theta$, we cans simply rearrange. For $\phi$ we can use `std::atan2()`, which returns an angle in the range from $-\pi$ to $\pi$ but they go first from $0$ to $\pi$, and then from $-\pi$ to $0$. To get a range of $0$ to $2\pi$ we can do
 $$
 atan2(a,b) = atan2(-a,-b) + \pi
@@ -174,4 +174,4 @@ void earth(hittable_list& world) {
 ```
 ![[Earth.png]]
 
-Now we move on to implementing [quadrilaterals](Quadrilaterals.md), our next type of primitive.
+Now we move on to implementing [[Quadrilaterals]], our next type of primitive.

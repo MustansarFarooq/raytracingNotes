@@ -26,12 +26,12 @@ private:
 ```
 
 Lambert's Cosine Law is defined to give a distribution of light as such:
-![](media/Cosine%20Law.png)
+![[media/Cosine Law.png]]
 As $\theta$ increases, $\cos{\theta}$ approaches 0. The light's intensity, represented by $r_i$ would be strongest if it is facing the surface directly (i.e. $\theta=0$). What our code does (`sf::Vector3f scatter_direction = rec.normal + randomUnitVector();`), is an approximation of that. Its quicker and still gives a good-enough approximation.
 
 ## Mirrored Reflections *(Metal)*
 <div align="center">  
-<img src="media/RayReflection.svg" width="500"/> 
+<img src="RayReflection.svg" width="500"/> 
 </div>
 Incident ray $\mathbf{I}$ strikes the surface to be reflected perfectly. The reflecting ray we can get with the projection of $\mathbf{I}$ on to normal $\mathbf{N}$, is of length $\mathbf{I} \cdot \mathbf{N}$, and we scale it by $\mathbf{N}$ to give it its direction. So far we have $(\mathbf{I} \cdot \mathbf{N})\mathbf{N}$. We thus now have the perpendicular component of $\mathbf{I}$ aligned at $\mathbf{N}$. The parallel , which, through substitution, is given by:
 $$
@@ -58,14 +58,14 @@ inline sf::Vector3f reflect(const sf::Vector3f& incident, const sf::Vector3f& no
 ```
 ### Fuzzed Reflections
 To make a fuzzy reflection, we just make a random point along a sphere for the reflecting ray to be in.
-![](Fuzzy%20Reflection.png)
+![[media/Fuzzy Reflection.png]]
 For fuzzier reflections, we will just adjust the radius of this "fuzz sphere" to allow for a wider range of randomness for the reflected ray.
 
 ## Refraction *(Dielectric Materials)*
 
 
 <div align="center">  
-<img src="media/RayRefraction.svg" width="800"/> 
+<img src="RayRefraction.svg" width="800"/> 
 </div>
 
 Refraction is defined by Snell's Law:
@@ -108,4 +108,4 @@ inline sf::Vector3f refract(const sf::Vector3f& incident, const sf::Vector3f& no
 When you look at a transparent surface from a specific angle, it behaves like a mirror and reflects. There is an equation for that, but instead its much more popular to use the Schlick Approximation for that.
 
 
-The next thing we want now is some optimization, which we can implement through the use of [Bounding Volume Hierarchies](Bounding%20Volume%20Hierarchies.md).
+The next thing we want now is some optimization. Greatly benefiting, you would move on to [[Bounding Volume Hierarchies]].

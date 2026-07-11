@@ -10,13 +10,13 @@ float aspectRatio = static_cast<float>(screenWidth)/screenHeight;
 
 Let us now try to define our plane width. Since we are given our FOV and the viewing plane distance (which for the sake of these diagrams and my time, I will use the variable $d$),  we could use some simple trigonometry to find the PlaneWidth. 
 <div align="center">  
-<img src="media/fig1.svg" width="300"/> 
+<img src="fig1.svg" width="300"/> 
 </div>
 
 Lets split it into 2 triangles.
 
 <div align="center">  
-<img src="media/fig2.svg" width="200"/> 
+<img src="fig2.svg" width="200"/> 
 </div>
 
 And so thus:
@@ -59,4 +59,4 @@ sf::Vector3f pixelStepX = planeRight/static_cast<float>(screenWidth);
 sf::Vector3f pixelStepY = planeUp/static_cast<float>(screenHeight);
 ```
 
-Now the majority of our variables seem to be set up for the Viewing plane. Now we an finally move on to [Ray-Sphere Intersection](Ray-Sphere%20Intersection.md).
+Now the majority of our variables seem to be set up for the Viewing plane. Now we an finally move on to [[Ray-Sphere Intersection]]

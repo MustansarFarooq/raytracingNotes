@@ -187,4 +187,4 @@ double ray::hitSphere(sf::Vector3f sphereCenter, float sphereRadius) {
 }
 ```
 
-From here, we, we now want to refactor and clean up our code to help for later. Move on to [Refactoring and clean up](Refactoring%20and%20clean%20up.md).
+From here, we, we now want to refactor and clean up our code to help for later. Move on to [[Refactoring and clean up]].
