@@ -1,0 +1,1 @@
+Stored here are my notes I made reading along with [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) and [_Ray Tracing: The Next Week_](https://raytracing.github.io/books/RayTracingTheNextWeek.html). Goal is to make it real-time. 
