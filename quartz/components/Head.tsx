@@ -4,7 +4,15 @@ import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/re
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
-import { CustomOgImagesEmitterName } from "../../.quartz/plugins"
+// Safely import or provide a fallback
+let CustomOgImagesEmitterName: string | undefined
+try {
+  const imported = await import("../../.quartz/plugins")
+  CustomOgImagesEmitterName = imported.CustomOgImagesEmitterName
+} catch (e) {
+  CustomOgImagesEmitterName = undefined
+}
+
 export default (() => {
   const Head: QuartzComponent = ({
     cfg,
@@ -31,9 +39,9 @@ export default (() => {
     const socialUrl =
       fileData.slug === "404" ? url.toString() : joinSegments(url.toString(), fileData.slug!)
 
-    const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
-      (e) => e.name === CustomOgImagesEmitterName,
-    )
+    const usesCustomOgImage = CustomOgImagesEmitterName 
+      ? ctx.cfg.plugins.emitters.some((e) => e.name === CustomOgImagesEmitterName)
+      : false
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
     const coreStylesheet = css[0]?.content
