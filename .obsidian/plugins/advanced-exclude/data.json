@@ -1,0 +1,6 @@
+{
+  "excludeMode": "Full",
+  "obsidianIgnoreContent": "docs/\nCODE_OF_CONDUCT.md\nREADME.md",
+  "shouldIgnoreExcludedFiles": true,
+  "shouldIncludeGitIgnorePatterns": true
+}

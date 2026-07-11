@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 5</title>
+      <link>https://MustansarFarooq.github.io/raytracingNotes</link>
+      <description>Last 10 notes on Quartz 5</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Excalidraw</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/excalidraw/</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/excalidraw/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:22:32 GMT</pubDate>
+  </item><item>
+    <title>excalidraw</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/tags/excalidraw</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/tags/excalidraw</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:22:32 GMT</pubDate>
+  </item><item>
+    <title>Tag Index</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/tags/</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/tags/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:22:32 GMT</pubDate>
+  </item><item>
+    <title>Ray-Sphere Intersection</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/ray-sphere-intersection</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/ray-sphere-intersection</guid>
+    <description><![CDATA[ The formula for a sphere is as follows: x^2 +y^2 + z^2 = r^2 And if we want to center it around a point instead of the origin: (x-h)^2 + (y-k)^2 + (z-l)^2 = r^2 And it is important to note that: x-h =-(h-x) Proven by: -(h-x)=-h+x = x-h But since we are squaring (x-h), that means that -(h-x) also get... ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:11:04 GMT</pubDate>
+  </item><item>
+    <title>Materials</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/materials</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/materials</guid>
+    <description><![CDATA[ To implement materials, we are going to make an abstract class for different material types. ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:09:52 GMT</pubDate>
+  </item><item>
+    <title>Textures</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/textures</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/textures</guid>
+    <description><![CDATA[ Next we will implement textures. Usually, we think of textures as mapping the point where we hit on an object, to a point on an image. ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:06:35 GMT</pubDate>
+  </item><item>
+    <title>Refactoring and clean up</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/refactoring-and-clean-up</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/refactoring-and-clean-up</guid>
+    <description><![CDATA[ Next, the book goes into refactoring and setting up some stuff in our ray tracer. ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:05:59 GMT</pubDate>
+  </item><item>
+    <title>Quadrilaterals</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/quadrilaterals</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/quadrilaterals</guid>
+    <description><![CDATA[ We will introduce a new primitive, the quad, which will technically be a parallelogram. ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:05:29 GMT</pubDate>
+  </item><item>
+    <title>Bounding Volume Hierarchies</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/bounding-volume-hierarchies</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/bounding-volume-hierarchies</guid>
+    <description><![CDATA[ A Bounding Volume Hierarchy (BVH) is a structure that stores all the objects in our scene and puts them neatly into a tree. ]]></description>
+    <pubDate>Sat, 11 Jul 2026 20:03:36 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://MustansarFarooq.github.io/raytracingNotes/</link>
+    <guid>https://MustansarFarooq.github.io/raytracingNotes/</guid>
+    <description><![CDATA[ Stored here are my notes I made reading along with Ray Tracing in One Weekend and Ray Tracing: The Next Week. Goal is to make it real-time. ]]></description>
+    <pubDate>Sat, 11 Jul 2026 02:31:05 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

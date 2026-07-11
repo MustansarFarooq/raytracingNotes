@@ -7,5 +7,10 @@
   },
   "alwaysUpdateLinks": true,
   "newLinkFormat": "relative",
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "userIgnoreFilters": [
+    "quartz/",
+    "public/",
+    "node_modules/"
+  ]
 }
