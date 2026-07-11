@@ -19,6 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
+          submodules: recursive
           fetch-depth: 0 # Fetch all history for git info
       - uses: actions/setup-node@v6
         with:
