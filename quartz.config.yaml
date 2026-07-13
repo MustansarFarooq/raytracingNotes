@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Raytracing Notes
+  pageTitle: "test to see if this config works"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: umami
-    host: https://umami.is/
-    websiteId: f0beafd2-a22e-45ab-bba6-2eb3caf04b37
+    provider: "umami"
+    host: "https://cloud.umami.is/script.js"
+    websiteId: "f0beafd2-a22e-45ab-bba6-2eb3caf04b37"
   locale: en-US
   baseUrl: MustansarFarooq.github.io/raytracingNotes
   ignorePatterns:
