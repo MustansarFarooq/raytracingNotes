@@ -18,9 +18,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: 
-      body: 
-      code:
+      header: EB Garamond
+      body: IBM Plex Serif
+      code: JetBrains Mono
     colors:
       lightMode:
         light: "#fcf5e4"
