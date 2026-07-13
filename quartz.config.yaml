@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "test to see if this config works"
+  pageTitle: "Ray Tracing Notes"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -260,13 +260,13 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-    enabled: true
-    options:
-      theme: default
+# - source:
+#      name: quartz-themes
+#      repo: github:saberzero1/quartz-themes
+#      subdir: plugin
+#    enabled: true
+#    options:
+#      theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
