@@ -5,7 +5,9 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
+    provider: umami
+    host: https://umami.is/
+    websiteId: f0beafd2-a22e-45ab-bba6-2eb3caf04b37
   locale: en-US
   baseUrl: MustansarFarooq.github.io/raytracingNotes
   ignorePatterns:
@@ -16,9 +18,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Libre Baskerville
-      body: Source Serif Pro
-      code: JetBrains Mono
+      header: "Libre Baskerville"
+      body: "Source Serif 4"
+      code: "JetBrains Mono"
     colors:
       lightMode:
         light: "#fcf5e4"
