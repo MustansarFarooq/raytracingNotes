@@ -1,2 +1,2 @@
 # Ray Tracing Notes
-A series of notes I have procured, working on my [ray tracer](https://github.com/MustansarFarooq/SFML_Raytracer). You can view them online at: https://github.com/MustansarFarooq/raytracingNotes/.
+A series of notes I have procured, working on my [ray tracer](https://github.com/MustansarFarooq/SFML_Raytracer). You can view them online [here](https://mustansarfarooq.github.io/raytracingNotes/).
